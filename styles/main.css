@@ -33,6 +33,31 @@ header {
   height: 90px;
   -webkit-box-shadow: 0px 2px 2px #ccc;
           box-shadow: 0px 2px 2px #ccc;
+  background-color: #4BA0FD;
+  padding: 0 20px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 35%;
+}
+
+.logo img {
+  width: 100px;
+  -webkit-box-shadow: 0px 0px 3px black;
+          box-shadow: 0px 0px 3px black;
 }
 
 nav {
