@@ -114,15 +114,33 @@ main {
     section {
         height: 80vh;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         width: 100%;
+        padding: 10px;
 
         &.topside {
-            background-image: url('../images/toppic1.png');
+            flex-direction: row;
+            background: linear-gradient(to bottom right, rgba(3, 13, 66, 0.4), rgba(25, 45, 109, 0.4), rgba(44, 81, 154, 0.4), rgba(61, 120, 203, 0.4), rgba(75, 161, 253, 0.4)),url('../images/toppic1.png');
             background-size: 100% 100%;
             background-repeat: no-repeat;
+
+            .mainCap {
+                h2 {
+                    font-weight: bold;
+                    font-family: "Archivo Black", sans-serif;
+                    font-size: 5.12em;
+                    color: #fff;
+                    margin-bottom: 1em;
+                    line-height: 0.7em;
+                    text-shadow: 3px 3px 1px #000;
+                }
+
+                small {
+                    font-size: 0.5em;
+                }
+            }
         }
 
         .content {
@@ -132,27 +150,35 @@ main {
             box-shadow: 0px 0px 2px #000;
             width: 433px;
             color: #000;
-            h2{
-                font-weight: bold;
-                font-family: "Archivo Black", sans-serif;
-                font-size: 2.12em;
-                color: $darkBlue;
-                margin-bottom: 1em;
-                line-height: 0.7em;
-            }
-            small {
-                font-size: 0.5em;
-            }
-            p{
+
+            p {
                 line-height: 1em;
                 margin-bottom: 0.5em;
             }
         }
+
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
     }
 
     #walk {
         border-top: 45px solid $red;
-        // background-color: $red;
+
+        // background-image: linear-gradient(to bottom right, $darkBlue, #003571, #005F97, #008AB0, #00B5B9, #14E0B8);
+        img {
+            width: 85%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0px 0px 11px #333;
+        }
     }
 }
 
