@@ -121,6 +121,8 @@ main {
 
         &.topside {
             background-image: url('../images/toppic1.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
         }
 
         .content {
@@ -146,6 +148,11 @@ main {
                 margin-bottom: 0.5em;
             }
         }
+    }
+
+    #walk {
+        border-top: 45px solid $red;
+        // background-color: $red;
     }
 }
 

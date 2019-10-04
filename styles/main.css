@@ -149,6 +149,8 @@ main section {
 
 main section.topside {
   background-image: url("../images/toppic1.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 main section .content {
@@ -177,6 +179,10 @@ main section .content small {
 main section .content p {
   line-height: 1em;
   margin-bottom: 0.5em;
+}
+
+main #walk {
+  border-top: 45px solid #e60000;
 }
 
 footer {
