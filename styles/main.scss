@@ -43,6 +43,10 @@ h1 {
     letter-spacing: -1px;
     line-height: 1;
     text-align: center;
+
+    @include mQ('200px', '800px') {
+        font-size: 1.6rem;
+    }
 }
 
 h2 {
@@ -53,6 +57,10 @@ h2 {
     line-height: 32px;
     margin: 0 0 7px;
     text-align: center;
+
+    @include mQ('200px', '800px') {
+        font-size: 1.6rem;
+    }
 }
 
 header {
@@ -65,6 +73,10 @@ header {
     box-shadow: 0px 2px 2px #ccc;
     background-color: lighten($lightBlue, 5%);
     padding: 0 20px;
+
+    @include mQ('200px', '800px') {
+        height: 70px;
+    }
 }
 
 .logo {
@@ -75,9 +87,17 @@ header {
     justify-content: space-around;
     width: 35%;
 
+    @include mQ('200px', '800px') {
+        width: 100%;
+    }
+
     img {
         width: 100px;
         box-shadow: 0px 0px 3px transparentize(#000000, 0.4);
+
+        @include mQ('200px', '800px') {
+            width: 70px;
+        }
     }
 }
 
@@ -88,6 +108,10 @@ nav {
     color: #1b1b1b;
     font-size: 1.1em;
     text-transform: uppercase;
+
+    @include mQ('200px', '800px') {
+        display: none;
+    }
 
     ul {
         display: flex;
@@ -119,6 +143,9 @@ main {
         align-items: center;
         width: 100%;
         padding: 10px;
+        @include mQ('200px', '800px'){
+            height: 100vh;
+        }
 
         &.topside {
             flex-direction: row;
@@ -132,6 +159,10 @@ main {
             background-size: 100% 100%;
             background-repeat: no-repeat;
 
+            @include mQ('200px', '800px') {
+                height: 30vh;
+            }
+
             .mainCap {
                 h2 {
                     font-weight: bold;
@@ -141,6 +172,11 @@ main {
                     margin-bottom: 1em;
                     line-height: 0.7em;
                     text-shadow: 3px 3px 1px #000;
+
+                    @include mQ('200px', '800px') {
+                        font-size: 2.1em;
+                        text-shadow: 2px 2px 3px #000;
+                    }
                 }
 
                 small {
@@ -156,6 +192,9 @@ main {
             box-shadow: 0px 0px 2px #000;
             width: 433px;
             color: #000;
+            @include mQ('200px', '800px') {
+                width: 80%;
+            }
 
             p {
                 line-height: 1em;
@@ -171,14 +210,29 @@ main {
         align-items: center;
         width: 100%;
         height: 100%;
+
+        @include mQ('200px', '800px') {
+            flex-direction: column;
+        }
     }
 
     .location {
         border-top: 45px solid $lightBlue;
+        height: 50vh;
+        img {
+            width: 600px;
+            @include mQ('200px', '800px') {
+                width: 90%;
+            }
+        }
     }
 
     #walk {
         border-top: 45px solid $red;
+
+        @include mQ('200px', '800px') {
+            border-top: 23px solid $red;
+        }
 
         // background-image: linear-gradient(to bottom right, $darkBlue, #003571, #005F97, #008AB0, #00B5B9, #14E0B8);
         img {
