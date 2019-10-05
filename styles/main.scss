@@ -305,13 +305,13 @@ footer {
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    background: $darkBlue;
 
     section {
         width: 100%;
         display: flex;
 
         &.topSection {
-            border: 1px solid #000;
             height: 260px;
             flex-direction: row;
             justify-content: space-around;
@@ -323,7 +323,7 @@ footer {
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            background-color: $darkBlue;
+            background-color: $lightBlue;
             color: #fff;
             font-family: "Hind", sans-serif;
             font-weight: 500;

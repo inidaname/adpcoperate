@@ -367,6 +367,7 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
+  background: #030d42;
 }
 
 footer section {
@@ -377,7 +378,6 @@ footer section {
 }
 
 footer section.topSection {
-  border: 1px solid #000;
   height: 260px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -401,7 +401,7 @@ footer section.copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #030d42;
+  background-color: #4ba0fd;
   color: #fff;
   font-family: "Hind", sans-serif;
   font-weight: 500;
