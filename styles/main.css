@@ -277,7 +277,12 @@ main .inner {
 
 main .location {
   border-top: 45px solid #4ba0fd;
-  height: 50vh;
+}
+
+@media screen and (min-width: 200px) and (max-width: 800px) {
+  main .location {
+    height: 50vh;
+  }
 }
 
 main .location img {

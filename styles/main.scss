@@ -218,7 +218,9 @@ main {
 
     .location {
         border-top: 45px solid $lightBlue;
-        height: 50vh;
+        @include mQ('200px', '800px') {
+            height: 50vh;
+        }
         img {
             width: 600px;
             @include mQ('200px', '800px') {
