@@ -68,15 +68,33 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="location">
             The distance and location
-            <img width="600" src="https://maps.googleapis.com/maps/api/staticmap?center=Albany,+NY&zoom=13&scale=1&size=600x300&maptype=roadmap&key=AIzaSyBTMG0D2w_OGNARinAfMUfwGpKi2bRtByk&format=png&visual_refresh=true" alt="Google Map of Albany, NY">
+            <img width="600" src="https://maps.googleapis.com/maps/api/staticmap?center=9.0442358,7.5100474&zoom=13&scale=2&size=600x300&maptype=roadmap&key=AIzaSyDa9jMMvJduQq6fn0PMkr-Au8UzQQu-zU8&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0x12ed1d%7Clabel:1%7C9.0442358,7.5100474&markers=size:mid%7Ccolor:0xff0000%7Clabel:2%7CGarki" alt="Google Map of Action Democratic Party">
         </section>
-        <section>
-            Commercial Opportunities
-        </section>
-        <section>
-            News and Press
+        <section class="rsvp">
+           <div class="inner">
+               <form action="" class="form rsvp-form">
+                   <div class="form-group">
+                     <label for="email">Email</label>
+                     <input type="text" class="form-control" name="email" id="email" aria-describedby="email" placeholder="Email Address">
+                     <small id="email" class="form-text text-muted">Add Email Address</small>
+                   </div>
+                   <div class="form-group">
+                     <label for="fullName">Full Name</label>
+                     <input type="text"
+                       class="form-control" name="fullName" id="fullName" aria-describedby="fullName" placeholder="Full Name">
+                     <small id="fullName" class="form-text text-muted">Full Name</small>
+                   </div>
+                   <div class="form-group">
+                     <label for="phoneNumber">Phone Number</label>
+                     <input type="text"
+                       class="form-control" name="phoneNumber" id="phoneNumber" aria-describedby="phoneNumber" placeholder="Phone Number">
+                     <small id="phoneNumber" class="form-text text-muted">Phone Number</small>
+                   </div>
+                   <button type="button" name="rsvp" id="rsvp" class="btn btn-primary btn-block">RSVP</button>
+               </form>
+           </div>
         </section>
     </main>
     <footer>
