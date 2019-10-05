@@ -257,6 +257,9 @@ main {
             align-items: flex-start;
             width: 60%;
             min-height: 70%;
+            @include mQ('200px', '800px') {
+                min-height: 40%;
+            }
 
             &-group {
                 width: 100%;
